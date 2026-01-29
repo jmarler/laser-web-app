@@ -11,6 +11,43 @@ This application streamlines the laser engraving workflow by combining:
 - **AI Pattern Generation** - Create texture patterns from text descriptions using Stable Diffusion v1.5
 - **Laser-Ready Export** - Download PNG depth maps and SVG cut lines ready for your laser engraver
 
+## Getting Started
+
+### Clone the Repository
+
+**Option A: VS Code Command Palette**
+1. Open VS Code
+2. Press `Cmd+Shift+P` (Mac) or `Ctrl+Shift+P` (Windows/Linux)
+3. Type "Git: Clone" and select it
+4. Paste: `https://github.com/jmarler/laser-web-app.git`
+5. Choose a folder to save it
+
+**Option B: Terminal**
+```bash
+git clone https://github.com/jmarler/laser-web-app.git
+cd laser-web-app
+code .
+```
+
+### Recommended VS Code Extensions
+
+- **Python** (Microsoft) - Syntax highlighting and IntelliSense
+- **Docker** (Microsoft) - Docker file support and container management
+
+### Quick Start
+
+**Mac:**
+```bash
+docker compose -f docker-compose.mac.yml up --build
+```
+
+**Linux/Windows with NVIDIA GPU:**
+```bash
+docker compose up --build
+```
+
+Then open http://localhost:8501 in your browser.
+
 ## How It Works
 
 ### Architecture
