@@ -1,0 +1,12 @@
+streamlit
+pillow
+numpy
+torch
+torchvision
+rembg
+onnxruntime
+diffusers
+transformers
+accelerate
+safetensors
+opencv-python

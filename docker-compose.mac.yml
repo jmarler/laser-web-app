@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  laser-app:
+    build: .
+    container_name: laser_web_app
+    ports:
+      - "8501:8501"
+    volumes:
+      - .:/app
+      - hf_cache:/app/.cache/huggingface
+    shm_size: "2gb"
+
+volumes:
+  hf_cache:

@@ -1,0 +1,45 @@
+# Model cache (downloaded at runtime)
+.cache/
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment variables (if added later)
+.env
+.env.local
+.env.*.local
+
+# Test uploads / output files
+*.png
+*.jpg
+*.jpeg
+*.svg
+!README.md
+
+# Jupyter notebooks (if used for testing)
+.ipynb_checkpoints/
+
+# Docker volumes (local)
+data/
